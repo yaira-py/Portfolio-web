@@ -49,7 +49,7 @@ class MyApp:
 
         if os.path.exists(image_path):
             my_img= ctk.CTkImage(Image.open(image_path),size=(500,590))
-            ctk.CTkLabel(self.hero,image=my_img,text='',fg_color='transparent',bg_color='transparent').place(relx=1.0,rely=1.0,anchor='se',x=-20,y=0)
+            ctk.CTkLabel(self.hero,image=my_img,text='for more info check my github and behance profile',wraplength=200,fg_color='transparent',bg_color='transparent').place(relx=1.0,rely=1.0,anchor='se',x=-20,y=0)
 
         else:
             ctk.CTkLabel(self.hero,text='',width=320,height=320,fg_color='#14b8a6',
